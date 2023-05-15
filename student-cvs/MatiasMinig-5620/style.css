@@ -1,0 +1,344 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    background: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+
+.header {
+    background-image: url('https://thumbs.dreamstime.com/b/paisajes-de-yosemite-46208063.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.4;
+    padding: 10vw 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #022058;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    gap: 5px;
+    margin: 20px;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+}
+
+.illustration img {
+    width: 40%;
+    border-radius: 100%;
+    text-align: center;
+    margin: 35px;
+}
+
+.title {
+    text-align: center;
+}
+
+.feature1 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.feature2 {
+    background-color: #2461d2;
+    border-radius: 8px;
+}
+
+.feature3 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.feature2 p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.feature2 h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.feature3 h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.feature3 a {
+    color: #e81c4f;
+    text-decoration: none;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses  {
+    min-height: 200px;
+    border-radius: 8px;
+    background: #2461d2;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.courses h2 {
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    margin: 10px;
+}
+
+.card img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.contact {
+    min-height: 400px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #BFDBFE;
+}
+
+
+footer {
+    background-color: #2461d2;
+    line-height: 1.2;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer>a {
+    margin: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.iconlinkedin {
+    width: 30px;
+    margin-left: 45%;
+}
+
+/* -------------------FORM CONTACT---------------------------- */
+.page {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title-contact {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+
+input[type="text"], [type="email"], [type="textarea"] {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #2f3542;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 16px 50px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    border-radius: 8px;
+    background: #4ade80;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background-color: #86efac;
+}
+
+button:active {
+    background-color: #16a34a;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    accent-color: #4ade80;
+}
+
+/* Cambio las lineas que rodean al imput del color del boton */
+
+input:focus-visible, #description:focus-visible {
+    outline: 2px solid #4ade80;
+    border: 1px solid #4ade80;
+}
+
+/* -------------------END FORM CONTACT------------------------ */
+
+
+/* MEDIAS QUERYS */
+/* Desktop */
+@media (min-width:1280px) {
+
+    /*   body {
+        background-color: rgb(105, 187, 10);
+    } */
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+    /* body {
+        background: blue;
+    } */
+
+    .container .feature {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+        margin: 5px;
+    }
+
+    .container .contact {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        margin: 5px;
+    }
+
+    .container .courses  {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+        margin: 5px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .feature2 p {
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+        font-weight: 800;
+        color: #fff;
+        margin-top: 30px;
+    }
+
+
+}
+
+/* Smartphone */
+@media (max-width: 650px) {
+    /*    body {
+        background-color: black;
+    } */
+
+    .container .header {
+        width: 100%;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .feature {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    .container .contact {
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        margin: 5px;
+    }
+
+    .container .courses  {
+        grid-column: 1 / 1;
+        grid-row: 3 / 4;
+        margin: 5px;
+    }
+
+}

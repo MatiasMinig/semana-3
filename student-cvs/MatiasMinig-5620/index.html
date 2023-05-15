@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mobile first responsive - Matias Minig CV</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <header>
+          <h1>Matias Minig</h1>
+          <h2>Web developer</h2>
+        </header>
+      </div>
+
+      <div class="feature">
+        <div class="feature1">
+          <div class="illustration">
+            <img src="matiascv.png" />
+          </div>
+          <article>
+            <header>
+              <h2 class="title">Hi, my name is Matias Minig</h2>
+            </header>
+          </article>
+        </div>
+        <div class="feature2">
+          <section>
+            <h2>About me</h2>
+            <p>
+              My name is Matias, I live in Argentina, I am a Senior Technician
+              in Systems Analysis. My profile is oriented to web development,
+              the knowledge obtained are: HTML, CSS, JavaScript, Java, React,
+              Angular, Agile Methodologies, Testing, Nodejs, I keep growing to
+              strengthen my Full-Stack profile.
+            </p>
+          </section>
+        </div>
+        <div class="feature3">
+          <section>
+            <h2>My github profile</h2>
+            <a href="https://github.com/MatiasMinig" target="_blank">Github</a>
+            <a href="#" target="_blank">Contact</a>
+          </section>
+        </div>
+      </div>
+
+      <div class="courses">
+        <h2>Courses</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://blog.hubspot.es/hubfs/media/imagenhtmlejemplo.png"
+              alt=""
+            />
+            <h6>HTML5</h6>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+              alt=""
+            />
+            <h6>CSS3</h6>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://i.blogs.es/544e7d/650_1000_javascript_logo/1366_2000.png"
+              alt=""
+            />
+            <h6>JavaScript</h6>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://chevtek.io/content/images/2021/02/ezgif.com-gif-maker.png"
+              alt=""
+            />
+            <h6>ReactJS</h6>
+          </div>
+
+          <div class="card">
+            <img src="https://www.tecnologias-informacion.com/sql.png" alt="" />
+            <h6>SQL</h6>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2019/01/mongodb.png?width=1200&enable=upscale"
+              alt=""
+            />
+            <h6>MongoDB</h6>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuRN9Zt5NjDtbvGUiQkdsY6eGPVTDgllCTV3XNn5JmQ&s"
+              alt=""
+            />
+            <h6>Metodología Ágil</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact page">
+        <div class="item-contact">
+          <h2 class="title-contact">Contact</h2>
+          <form id="contact">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <fieldset required>
+                <legend>Budget</legend>
+                <input name="budget" type="radio" /><label for="budget"
+                  >$1000</label
+                >
+                <input name="budget" type="radio" /><label for="budget"
+                  >$500</label
+                >
+                <input name="budget" type="radio" /><label for="budget"
+                  >$300</label
+                >
+              </fieldset>
+              <div class="help">This budget is the base, not the total.</div>
+            </div>
+            <div class="form-group">
+              <label for="type">Type of project </label>
+              <select id="type">
+                <option value="select" selected disabled>Select one</option>
+                <option value="website">Website</option>
+                <option value="webapp">Application Web</option>
+                <option value="mobile">Application Mobile</option>
+                <option value="design">Design</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                rows="5"
+                required
+              ></textarea>
+              <div class="help">
+                Write a description of the project in at least 500 words.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="terms"
+                ><input id="terms" type="checkbox" required /><span
+                  >I accept the terms and conditions
+                </span></label
+              >
+            </div>
+            <div class="btn">
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="iconlinkedin"
+        viewBox="0 0 448 512"
+      >
+        <path
+          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+        /></svg
+      ><a
+        href="https://www.linkedin.com/in/matiasminig/"
+        target="_blank"
+        class="linkedin"
+        >Matias Minig</a
+      >
+    </footer>
+
+    <script type="module" src="/main.mjs"></script>
+  </body>
+</html>
